@@ -1,0 +1,6 @@
+{
+  "name": "Opengl-bezier-curve",
+  "tagline": "Bezier curve function with stimulation for openGL in c++.",
+  "body": "# opengl-bezier-curve\r\n\r\n## Desription\r\nBezier curve function with stimulation for openGL in c++.\r\n\r\n![Demo screenshot](http://s22.postimg.org/7b1fiujgx/Screen_Shot_2016_11_20_at_4_57_04_AM.png)\r\n\r\n## Getting Started\r\nRun the main.cpp file to adjust the points of the curve and the bezier curve will be drawn on the screen.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
