@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		16BBAC321DE145E6004B106E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16BBAC311DE145E6004B106E /* main.cpp */; };
+		16BBAC3A1DE145F2004B106E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BBAC391DE145F2004B106E /* OpenGL.framework */; };
+		16BBAC3C1DE145F7004B106E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BBAC3B1DE145F7004B106E /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		16BBAC2E1DE145E6004B106E /* opengl-bezier-curve */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "opengl-bezier-curve"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BBAC311DE145E6004B106E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		16BBAC391DE145F2004B106E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		16BBAC3B1DE145F7004B106E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BBAC3C1DE145F7004B106E /* GLUT.framework in Frameworks */,
+				16BBAC3A1DE145F2004B106E /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				16BBAC301DE145E6004B106E /* opengl-bezier-curve */,
 				16BBAC2F1DE145E6004B106E /* Products */,
+				16BBAC381DE145F2004B106E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				16BBAC311DE145E6004B106E /* main.cpp */,
 			);
 			path = "opengl-bezier-curve";
+			sourceTree = "<group>";
+		};
+		16BBAC381DE145F2004B106E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16BBAC3B1DE145F7004B106E /* GLUT.framework */,
+				16BBAC391DE145F2004B106E /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +234,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 35828L95Q5;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -226,6 +243,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 35828L95Q5;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
